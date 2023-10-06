@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/estilos.css" />
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@100;200;300;400&family=EB+Garamond:ital,wght@1,500&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body class="p-0">
+    <header class="sticky-top" style="background: white">
+      <nav class="navbar navbar-expand-lg navbar-light headerGeneral">
+        <div class="container">
+          <h2 class="navbar-brand nombreHeader" href="#">
+            <strong>Joaquin</strong> Imbriago
+          </h2>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto listaDesordenadaIndex">
+              <li class="nav-item listaIndex">
+                <a class="nav-link enlaceIndex" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item listaIndex">
+                <a class="nav-link enlaceIndex" href="./sobreMi.html"
+                  >Sobre mi</a
+                >
+              </li>
+              <li class="nav-item listaIndex">
+                <a class="nav-link enlaceIndex" href="./servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item listaIndex">
+                <a
+                  class="nav-link enlaceIndex paginaSeleccionada"
+                  href="./proyectos.html"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="nav-item listaIndex">
+                <a
+                  class="nav-link enlaceIndex enlaceContactame"
+                  href="./contacto.html"
+                  >Contáctame</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container d-flex align-items-center flex-column gap-4 py-5">
+      <h2 class="m-auto pb-2" style="font-family: 'EB Garamond', serif; letter-spacing: 1px;">Mis últimos 3 proyectos</h2>
+      <div class="card mb-3" style="max-width: 1000px">
+        <div class="rounded row" style="box-shadow: 0 2px 12px #00000070">
+          <div class="col-6">
+            <img
+              src="./../assets/ClickVeloz.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-6">
+            <div class="card-body py-2 px-3">
+              <h5
+                class="card-title m-0 pt-1"
+                style="font-family: math; font-weight: 600; font-size: 1.5rem;"
+              >
+                Click Veloz
+              </h5>
+              <p class="card-text mb-2 p-1" style="font-size: 1.15rem; font-family: 'Noto Sans JP', sans-serif;">
+                Mi primer proyecto. Éste juego contiene 3 modos de dificultad.
+                Para ganar debemos tocar todos los cuadrados blancos en el menor
+                tiempo posible. Cuenta con un diseño adaptable.
+              </p>
+              <div class="col-12 d-flex justify-content-start gap-3">
+                <button type="button" class="btn btn-lg btn-primary">
+                  Probá la App
+                </button>
+                <button type="button" class="btn btn-secondary btn-lg">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 1000px">
+        <div class="rounded row" style="box-shadow: 0 2px 12px #00000070">
+          <div class="col-6">
+            <img
+              src="./../assets/ToDoList.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-6">
+            <div class="card-body py-1 px-3">
+              <h5
+                class="card-title m-0 pt-1"
+                style="font-family: math; font-weight: 600; font-size: 1.5rem;"
+              >
+                Lista de tareas
+              </h5>
+              <p class="card-text mb-2 p-1" style="font-size: 1.15rem; font-family: 'Noto Sans JP', sans-serif;">
+                Web con la que podemos crear, editar y borrar nuestras tareas.
+                Almacena cada cambio realizado en el navegador del usuario
+                (LocalStorage). Cuenta con un diseño adaptable para movil.
+              </p>
+              <div class="col-12 d-flex justify-content-start gap-3">
+                <button type="button" class="btn btn-lg btn-primary">
+                  Probá la App
+                </button>
+                <button type="button" class="btn btn-secondary btn-lg">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 1000px">
+        <div class="rounded row" style="box-shadow: 0 2px 12px #00000070">
+          <div class="col-6">
+            <img
+              src="./../assets/reCon.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-6">
+            <div class="card-body py-1 px-3">
+              <h5
+                class="card-title m-0 pt-1"
+                style="font-family: math; font-weight: 600; font-size: 1.5rem;"
+              >
+                App Registro Contable (Recon)
+              </h5>
+              <p class="card-text mb-2 p-1" style="font-size: 1.15rem; font-family: 'Noto Sans JP', sans-serif;">
+                App Web que nos permite llevar el registro de nuestros gastos
+                mensuales, ordenandolos por categoria y fecha. A su vez, podemos
+                observar el total gastado durante el mes.
+              </p>
+              <div class="col-12 d-flex justify-content-start gap-3">
+                <button type="button" class="btn btn-lg btn-primary">
+                  Probá la App
+                </button>
+                <button type="button" class="btn btn-secondary btn-lg">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footerIndex footer w-100 row gap-3 justify-content-center">
+      <div class="contenedorRedesSociales col-6">
+        <ul class="d-flex justify-content-center gap-4">
+          <li class="listaRedesSociales" style="list-style: none">
+            <a href="enlaceRedesSociales">
+              <img
+                style="width: 42px"
+                class="logoRedSocial"
+                src="./../assets/linkedin.png"
+                alt="red social de Joaquin Imbriago"
+              />
+            </a>
+          </li>
+          <li class="listaRedesSociales" style="list-style: none">
+            <a href="enlaceRedesSociales">
+              <img
+                style="width: 42px"
+                class="logoRedSocial"
+                src="./../assets/instagram.png"
+                alt="red social de Joaquin Imbriago"
+              />
+            </a>
+          </li>
+          <li class="listaRedesSociales" style="list-style: none">
+            <a href="enlaceRedesSociales">
+              <img
+                style="width: 42px"
+                class="logoRedSocial"
+                src="./../assets/github.png"
+                alt="red social de Joaquin Imbriago"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="listaDesordenadaFooterIndex col-6">
+        <li class="listaFooterIndex">
+          <small class="enlaceFooterIndex" href="">
+            @Copyright Joaquin Imbriago 2023
+          </small>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
