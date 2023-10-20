@@ -1,0 +1,145 @@
+@import "variables.scss";
+
+// Estilos del Header
+
+.headerGeneral {
+  margin: auto;
+  width: 85%;
+  z-index: 999;
+  padding: 1.75rem 0;
+
+  .nombreHeader {
+    font-family: $fuente-oxanium;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .listaDesordenadaIndex {
+    display: flex;
+    width: 540px;
+    justify-content: space-between;
+    align-items: center;
+
+    .listaIndex {
+      list-style: none;
+      align-self: flex-end;
+      .enlaceIndex {
+        color: $color-negro;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        font-family: $fuente-noto-sans-jp;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.2px;
+        text-decoration: none;
+        z-index: 1;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          bottom: 0px;
+          left: 0;
+          z-index: 99;
+          border-bottom: 2px solid $color-negro;
+          transform: translateX(-200px);
+          transition: all 0.3s ease;
+        }
+        &:hover::before {
+          transform: translateX(0px);
+        }
+      }
+
+      .enlaceContactame {
+        border: 2px solid $color-negro;
+        border-radius: 99px;
+        padding: 4px 10px;
+        font-style: italic;
+        transition: all 0.3s ease;
+        position: relative;
+        background: $color-blanco;
+        color: $color-negro;
+        font-size: 18px;
+        font-family: $fuente-noto-sans-jp;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            45deg,
+            $color-rojo,
+            $color-azul,
+            $color-deeppink,
+            $color-azul,
+            $color-rojo,
+            $color-azul,
+            $color-deeppink,
+            $color-azul
+          );
+          background-size: 800%;
+          border-radius: 10px;
+          filter: blur(4px);
+          animation: sombraGradiente 20s linear infinite;
+        }
+      }
+
+      .enlaceContactameActivo {
+        border: 2px solid $color-negro;
+        border-radius: 99px;
+        padding: 4px 10px;
+        font-style: italic;
+        color: $color-blanco;
+        background: $color-negro;
+        transition: all 0.3s ease;
+        position: relative;
+        font-size: 18px;
+        font-family: $fuente-noto-sans-jp;
+        line-height: normal;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            45deg,
+            $color-rojo,
+            $color-azul,
+            $color-deeppink,
+            $color-azul,
+            $color-rojo,
+            $color-azul,
+            $color-deeppink,
+            $color-azul
+          );
+          background-size: 800%;
+          border-radius: 10px;
+          filter: blur(7px);
+          animation: sombraGradiente 20s linear infinite;
+        }
+
+        &:hover {
+          background: $color-negro;
+          color: $color-blanco;
+        }
+      }
+
+      .paginaSeleccionada {
+        border-bottom: 2px solid $color-negro;
+        color: $color-negro;
+        font-size: 18px;
+        font-family: $fuente-noto-sans-jp;
+        line-height: normal;
+      }
+    }
+  }
+}

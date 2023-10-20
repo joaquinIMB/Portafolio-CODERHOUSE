@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerGeneral {
+  margin: auto;
+  width: 85%;
+  z-index: 999;
+  padding: 1.75rem 0;
+}
+.headerGeneral .nombreHeader {
+  font-family: "Oxanium", cursive;
+  font-weight: 400;
+  font-size: 22px;
+}
+.headerGeneral .listaDesordenadaIndex {
+  display: flex;
+  width: 540px;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex {
+  list-style: none;
+  align-self: flex-end;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceIndex {
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  z-index: 1;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceIndex::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+  border-bottom: 2px solid #000000;
+  transform: translateX(-200px);
+  transition: all 0.3s ease;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceIndex:hover::before {
+  transform: translateX(0px);
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceContactame {
+  border: 2px solid #000000;
+  border-radius: 99px;
+  padding: 4px 10px;
+  font-style: italic;
+  transition: all 0.3s ease;
+  position: relative;
+  background: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceContactame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(4px);
+  animation: sombraGradiente 20s linear infinite;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceContactameActivo {
+  border: 2px solid #000000;
+  border-radius: 99px;
+  padding: 4px 10px;
+  font-style: italic;
+  color: #ffffff;
+  background: #000000;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: normal;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceContactameActivo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(7px);
+  animation: sombraGradiente 20s linear infinite;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .enlaceContactameActivo:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.headerGeneral .listaDesordenadaIndex .listaIndex .paginaSeleccionada {
+  border-bottom: 2px solid #000000;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: normal;
+}
+
+.contenedorPrincipal {
+  width: 85%;
+  margin: auto;
+}
+.contenedorPrincipal .contenedorBanner {
+  height: 526px;
+  z-index: 99;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos {
+  margin: auto 0;
+  z-index: 998;
+  position: relative;
+  font-family: "Oxanium", cursive;
+}
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .fondoVideoTitulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .tituloIndex,
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .spanTituloFullStack {
+  font-size: 7rem;
+  text-align: center;
+  font-family: math;
+  font-weight: bold;
+  color: #000000;
+  mix-blend-mode: screen;
+  z-index: 99;
+  position: relative;
+  background: #ffffff;
+  line-height: 6.75rem;
+  backdrop-filter: opacity(0.7) brightness(0.7);
+  filter: hue-rotate(300deg);
+}
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .tituloIndex .spanTituloWeb,
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .spanTituloFullStack .spanTituloWeb {
+  font-family: "EB Garamond", serif;
+  text-shadow: none;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #1d1240;
+  letter-spacing: 1px;
+}
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .tituloIndex .spanTituloFullStack,
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .spanTituloFullStack .spanTituloFullStack {
+  mix-blend-mode: luminosity;
+  font-size: 6rem;
+}
+.contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .subtituloIndex {
+  color: #000000;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 800;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  mix-blend-mode: screen;
+  z-index: 99;
+  position: relative;
+  background: #ffffff;
+  backdrop-filter: opacity(0.7) brightness(0.9);
+  filter: hue-rotate(300deg);
+}
+.contenedorPrincipal .tituloInicialSobreMi {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 1.75rem;
+  color: #1d1240;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+.contenedorPrincipal .tituloSecundarioSobreMi {
+  line-height: 4.8rem;
+  font-family: math, system-ui;
+  color: #1d1240;
+}
+.contenedorPrincipal .tituloTerciarioSobreMi {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgba(29, 18, 64, 0.7803921569);
+}
+.contenedorPrincipal .imagenSobreMi {
+  view-timeline-name: --imagen;
+  view-timeline-axis: block;
+  animation-timeline: --imagen;
+  animation-name: mostrarImagen;
+  animation-range: entry 25% cover 40%;
+  animation-fill-mode: both;
+}
+.contenedorPrincipal .tituloSeccionSobreMi {
+  position: relative;
+  view-timeline-name: --titulo;
+  view-timeline-axis: block;
+  animation-timeline: --titulo;
+  animation-name: mostrarTitulo;
+  animation-range: entry 40% cover 45%;
+  animation-fill-mode: both;
+  transform-origin: bottom;
+  font-family: "EB Garamond", serif;
+}
+.contenedorPrincipal .descripcionSeccionSobreMi {
+  position: relative;
+  view-timeline-name: --descripcion;
+  view-timeline-axis: block;
+  animation-timeline: --descripcion;
+  animation-name: mostrarDescripcion;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+  transform-origin: bottom;
+  font-size: 1.25rem;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 1px;
+}
+.contenedorPrincipal .tituloMisServicios {
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 600;
+  color: #1d1240;
+}
+.contenedorPrincipal .card {
+  transition: all 0.2s ease;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5647058824);
+}
+.contenedorPrincipal .card .card-title {
+  font-family: math;
+  letter-spacing: 1px;
+  font-size: 1.75rem;
+  color: white;
+}
+.contenedorPrincipal .card .card-text {
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.75px;
+  font-size: 1rem;
+  color: rgb(224, 224, 224);
+}
+.contenedorPrincipal .card .card-body {
+  background: #2e2e2e;
+  border-radius: 0 0 5px 5px;
+}
+.contenedorPrincipal .card:hover {
+  box-shadow: 1px 7px 16px rgba(0, 0, 0, 0.5647058824);
+  transform: translateY(-10px);
+}
+.contenedorPrincipal .enlaceServicios {
+  text-decoration: none;
+}
+.contenedorPrincipal .contenedorImagenAnimadaDescripcion {
+  border-top: 1px solid rgba(0, 0, 0, 0.2509803922);
+}
+
+.footerIndex {
+  display: flex;
+  height: 82px;
+  position: relative;
+  align-items: center;
+}
+.footerIndex .listaDesordenadaFooterIndex {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footerIndex .listaDesordenadaFooterIndex .enlaceFooterIndex {
+  font-size: 14px;
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  font-family: sans-serif;
+  letter-spacing: 1.1px;
+}
+.footerIndex .listaRedesSociales {
+  list-style: none;
+}
+.footerIndex .listaRedesSociales .logoRedSocial {
+  width: 42px;
+}
+
+.contenedorContacto {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+.contenedorContacto .tituloContactame {
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 600;
+  color: #1d1240;
+}
+.contenedorContacto .formulario_contacto {
+  margin-top: 20px;
+}
+.contenedorContacto .formulario_contacto .form-label {
+  font-weight: bold;
+}
+.contenedorContacto .formulario_contacto .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.contenedorContacto .formulario_contacto .btn-primary:hover {
+  background-color: #0056b3;
+}
+.contenedorContacto .imagenContacto {
+  width: 100%;
+  height: auto;
+}
+
+.contenedorProyectos .tituloProyectos {
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+}
+.contenedorProyectos .cardProyectos {
+  margin-bottom: 1.5rem;
+  max-width: 1000px;
+}
+.contenedorProyectos .cardProyectos .contenedorCardProyectos .titulo-descripcion-proyectos {
+  height: 100% !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-direction: column !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4392156863);
+}
+.contenedorProyectos .enlaceProyectos {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  padding: 0 0.25rem;
+}
+
+@keyframes sombraGradiente {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes mostrarImagen {
+  from {
+    opacity: 0;
+    transform: scale(0%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+@keyframes mostrarTitulo {
+  from {
+    opacity: 0;
+    transform: scale(50%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+@keyframes mostrarDescripcion {
+  from {
+    transform: translateX(-700px);
+    opacity: 0;
+    transform: scale(0%);
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+@media (max-width: 2000px) {
+  .contenedorTitulosSobreMi {
+    height: 70vh !important;
+    align-content: center !important;
+  }
+  .tituloMisServicios {
+    padding-top: 2.5rem !important;
+  }
+  .contenedorCard {
+    padding-top: 1.5rem !important;
+    height: 70vh !important;
+  }
+}
+@media (max-width: 1370px) {
+  .contenedorTitulosSobreMi {
+    height: 70vh !important;
+    align-content: center !important;
+  }
+  .tituloInicialSobreMi {
+    font-size: 1.25rem !important;
+    padding-top: 1rem !important;
+  }
+  .tituloSecundarioSobreMi {
+    font-size: 4rem !important;
+    line-height: 4.5rem !important;
+    letter-spacing: 1px !important;
+  }
+  .tituloTerciarioSobreMi {
+    font-size: 1rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .descripcionSeccionSobreMi {
+    font-size: 1.15rem !important;
+  }
+  iframe {
+    width: 1370px !important;
+  }
+}
+@media (max-width: 1270px) {
+  .descripcionSeccionSobreMi {
+    font-size: 1rem !important;
+  }
+  .tituloSeccionSobreMi {
+    font-size: 1.75rem !important;
+  }
+  iframe {
+    width: 1270px !important;
+  }
+}
+@media (max-width: 1030px) {
+  .contenedorImagenAnimadaDescripcion {
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+  .contenedorImagen {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .contenedorTituloDescripcionAnimado {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 0.5rem !important;
+  }
+  .tituloSeccionSobreMi {
+    font-size: 2.25rem !important;
+    animation-range: entry 1% cover 5%;
+  }
+  .descripcionSeccionSobreMi {
+    animation-name: mostrarTitulo !important;
+  }
+  iframe {
+    width: 1030px !important;
+  }
+}
+@media (max-width: 1100px) {
+  .contenedorCard {
+    justify-content: center;
+    height: auto !important;
+  }
+  .cards {
+    width: 45% !important;
+  }
+  .tituloIndex {
+    text-align: center !important;
+    font-size: 5rem !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .listaDesordenadaIndex {
+    width: auto !important;
+    gap: 0.5rem;
+    text-transform: uppercase;
+  }
+  .paginaSeleccionada {
+    border-bottom: none !important;
+    padding: 0 1rem !important;
+    border-left: 2px solid #000000;
+  }
+  .contenedorNav {
+    justify-content: center !important;
+  }
+  .listaIndex {
+    align-self: center !important;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    padding: 0 !important;
+  }
+  .container {
+    gap: 1rem !important;
+  }
+  .col-6 {
+    width: 100% !important;
+  }
+  .contenedorImagenAnimadaDescripcion {
+    flex-direction: column;
+    gap: 0.75rem !important;
+  }
+  .headerGeneral {
+    padding: 1rem 0;
+  }
+  .tituloSecundarioSobreMi {
+    font-size: 3.75rem !important;
+    line-height: 3.75rem !important;
+  }
+  .tituloTerciarioSobreMi {
+    font-size: 0.75rem !important;
+  }
+  iframe {
+    width: 800px !important;
+  }
+  .spanTituloWeb {
+    display: none;
+  }
+  .spanTituloFullStack {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 680px) {
+  .contenedorCard {
+    flex-direction: column !important;
+    align-items: center;
+    flex-wrap: nowrap !important;
+    padding-top: 1rem !important;
+  }
+  .cards {
+    width: 90% !important;
+    padding-top: 1.75rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .contenedorImagenAnimadaDescripcion {
+    padding-top: 0.75rem;
+  }
+  .contenedorServicios {
+    padding-top: 1rem !important;
+  }
+  .tituloMisServicios {
+    padding-top: 0.5rem !important;
+    text-align: left !important;
+    padding: 0 2rem !important;
+  }
+  iframe {
+    width: 600px !important;
+  }
+  .container {
+    padding: 1rem 0 !important;
+  }
+  .contenedorMapa {
+    padding-top: 3rem !important;
+  }
+  .mapa {
+    width: 300px;
+  }
+  .spanTituloFullStack {
+    font-size: 5rem !important;
+  }
+  .tituloIndex {
+    line-height: 4.75rem !important;
+    font-size: 3.75rem !important;
+  }
+  .contenedorBanner {
+    max-height: 486px;
+  }
+}
+@media (max-width: 580px) {
+  .cardProyectos {
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .tituloSecundarioSobreMi {
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+  }
+  .tituloIndex {
+    line-height: 4rem !important;
+    font-size: 3rem !important;
+  }
+  .spanTituloFullStack {
+    font-size: 4rem !important;
+  }
+}
+@media (max-height: 520px) {
+  .tituloIndex {
+    line-height: 4.75rem !important;
+    font-size: 3.75rem !important;
+  }
+}
+@media (max-height: 800px) {
+  .contenedorCard {
+    justify-content: center;
+    height: auto !important;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
