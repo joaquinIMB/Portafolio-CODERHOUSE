@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+//Estilos del footer
+
+.footerIndex {
+  display: flex;
+  height: 82px;
+  position: relative;
+  align-items: center;
+
+  .listaDesordenadaFooterIndex {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .enlaceFooterIndex {
+      font-size: 14px;
+      position: relative;
+      text-decoration: none;
+      color: $color-negro;
+      font-family: sans-serif;
+      letter-spacing: 1.1px;
+    }
+  }
+  .listaRedesSociales {
+    list-style: none;
+    .logoRedSocial {
+      width: 42px;
+    }
+  }
+}

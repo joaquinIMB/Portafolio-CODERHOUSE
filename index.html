@@ -1,145 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/estilos.css" />
-    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@100;200;300;400&family=EB+Garamond:ital,wght@1,500&family=Noto+Sans+JP&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Vídeo de https://pixabay.com/es/users/vimeo-free-videos-1283884/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=323-->
-    <title>Portafolio - Joaquin Imbriago</title>
-  </head>
-  <body>
-    <header class="sticky-top" style="background: white">
-      <nav class="navbar navbar-expand-lg navbar-light headerGeneral">
-        <div class="container">
-          <h2 class="navbar-brand nombreHeader" href="#">
-            <strong>Joaquin</strong> Imbriago
-          </h2>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav ml-auto listaDesordenadaIndex">
-              <li class="nav-item listaIndex">
-                <a
-                  class="nav-link enlaceIndex paginaSeleccionada"
-                  href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item listaIndex">
-                <a class="nav-link enlaceIndex" href="./pages/sobreMi.html"
-                  >Sobre mi</a
-                >
-              </li>
-              <li class="nav-item listaIndex">
-                <a class="nav-link enlaceIndex" href="./pages/servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item listaIndex">
-                <a class="nav-link enlaceIndex" href="./pages/proyectos.html"
-                  >Proyectos</a
-                >
-              </li>
-              <li class="nav-item listaIndex">
-                <a
-                  class="nav-link enlaceIndex enlaceContactame"
-                  href="./pages/contacto.html"
-                  >Contáctame</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="container contenedorPrincipal">
-      <div class="contenedorBanner row">
-        <div class="contenedorVideoYtitulos overflow-hidden col">
-          <video
-            class="fondoVideoTitulo"
-            muted
-            autoplay
-            preload="auto"
-            loop
-            src="./assets/stars.mp4"
-          ></video>
-          <h1 class="tituloIndex">
-            Desarrollador
-            <span class="spanTituloWeb">web</span><br /><span
-              class="spanTituloFullStack"
-              >Full Stack</span
-            >
-          </h1>
-          <h2 class="subtituloIndex">Construyendo el futuro digital</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles/css/estilos.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@100;200;300;400&family=EB+Garamond:ital,wght@1,500&family=Noto+Sans+JP&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Vídeo de https://pixabay.com/es/users/vimeo-free-videos-1283884/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=323-->
+  <title>Portafolio - Joaquin Imbriago</title>
+</head>
+
+<body>
+  <header class="sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light headerGeneral">
+      <div class="container">
+        <h2 class="navbar-brand nombreHeader" href="#">
+          <strong>Joaquin</strong> Imbriago
+        </h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ml-auto listaDesordenadaIndex">
+            <li class="nav-item listaIndex">
+              <a class="nav-link paginaSeleccionada" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item listaIndex">
+              <a class="nav-link enlaceIndex" href="./pages/sobreMi.html">Sobre mi</a>
+            </li>
+            <li class="nav-item listaIndex">
+              <a class="nav-link enlaceIndex" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item listaIndex">
+              <a class="nav-link enlaceIndex" href="./pages/proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item listaIndex">
+              <a class="nav-link enlaceContactame" href="./pages/contacto.html">Contáctame</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-    <footer class="footerIndex footer w-100 row gap-3 justify-content-center">
-      <div class="contenedorRedesSociales col-6">
-        <ul class="d-flex justify-content-center gap-4">
-          <li class="listaRedesSociales" style="list-style: none;">
-            <a href="enlaceRedesSociales">
-              <img
-                style="width: 42px"
-                class="logoRedSocial"
-                src="./assets/linkedin.png"
-                alt="red social de Joaquin Imbriago"
-              />
-            </a>
-          </li>
-          <li class="listaRedesSociales" style="list-style: none;">
-            <a href="enlaceRedesSociales">
-              <img
-                style="width: 42px"
-                class="logoRedSocial"
-                src="./assets/instagram.png"
-                alt="red social de Joaquin Imbriago"
-              />
-            </a>
-          </li>
-          <li class="listaRedesSociales" style="list-style: none;">
-            <a href="enlaceRedesSociales">
-              <img
-                style="width: 42px"
-                class="logoRedSocial"
-                src="./assets/github.png"
-                alt="red social de Joaquin Imbriago"
-              />
-            </a>
-          </li>
-        </ul>
+    </nav>
+  </header>
+  <main class="container contenedorPrincipal">
+    <div class="contenedorBanner row">
+      <div class="contenedorVideoYtitulos overflow-hidden col">
+        <video class="fondoVideoTitulo" muted autoplay preload="auto" loop src="./assets/stars.mp4"></video>
+        <h1 class="tituloIndex">
+          Desarrollador
+          <span class="spanTituloWeb">web</span><br /><span class="spanTituloFullStack">Full Stack</span>
+        </h1>
+        <h2 class="subtituloIndex">Construyendo el futuro digital</h2>
       </div>
-      <ul class="listaDesordenadaFooterIndex col-6">
-        <li class="listaFooterIndex">
-          <small class="enlaceFooterIndex" href="">
-            @Copyright Joaquin Imbriago 2023
-          </small>
+    </div>
+  </main>
+  <footer class="footerIndex footer w-100 row gap-3 justify-content-center">
+    <div class="contenedorRedesSociales col-6">
+      <ul class="d-flex justify-content-center gap-4">
+        <li class="listaRedesSociales">
+          <a href="enlaceRedesSociales">
+            <img class="logoRedSocial" src="./assets/linkedin.png" alt="red social de Joaquin Imbriago" />
+          </a>
+        </li>
+        <li class="listaRedesSociales">
+          <a href="enlaceRedesSociales">
+            <img class="logoRedSocial" src="./assets/instagram.png" alt="red social de Joaquin Imbriago" />
+          </a>
+        </li>
+        <li class="listaRedesSociales">
+          <a href="enlaceRedesSociales">
+            <img class="logoRedSocial" src="./assets/github.png" alt="red social de Joaquin Imbriago" />
+          </a>
         </li>
       </ul>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+    <ul class="listaDesordenadaFooterIndex col-6">
+      <li class="listaFooterIndex">
+        <small class="enlaceFooterIndex" href="">
+          @Copyright Joaquin Imbriago 2023
+        </small>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

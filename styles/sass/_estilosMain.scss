@@ -1,0 +1,178 @@
+@import "variables.scss";
+
+//Estilos del main
+
+.contenedorPrincipal {
+  width: 85%;
+  margin: auto;
+
+  .contenedorBanner {
+    height: 526px;
+    z-index: 99;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+
+    .contenedorVideoYtitulos {
+      margin: auto 0;
+      z-index: 998;
+      position: relative;
+      font-family: $fuente-oxanium;
+
+      .fondoVideoTitulo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      .tituloIndex,
+      .spanTituloFullStack {
+        font-size: 7rem;
+        text-align: center;
+        font-family: $fuente-math;
+        font-weight: bold;
+        color: $color-negro;
+        mix-blend-mode: screen;
+        z-index: 99;
+        position: relative;
+        background: $color-blanco;
+        line-height: 6.75rem;
+        backdrop-filter: opacity(0.7) brightness(0.7);
+        filter: hue-rotate(300deg);
+
+        .spanTituloWeb {
+          font-family: $fuente-eb-garamond;
+          text-shadow: none;
+          font-style: italic;
+          text-transform: capitalize;
+          color: #1d1240;
+          letter-spacing: 1px;
+        }
+
+        .spanTituloFullStack {
+          mix-blend-mode: luminosity;
+          font-size: 6rem;
+        }
+      }
+
+      .subtituloIndex {
+        color: $color-negro;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 800;
+        font-family: $fuente-eb-garamond;
+        letter-spacing: 1px;
+        line-height: 2rem;
+        mix-blend-mode: screen;
+        z-index: 99;
+        position: relative;
+        background: $color-blanco;
+        backdrop-filter: opacity(0.7) brightness(0.9);
+        filter: hue-rotate(300deg);
+      }
+    }
+  }
+  .tituloInicialSobreMi {
+    font-family: $fuente-eb-garamond;
+    font-style: italic;
+    font-size: 1.75rem;
+    color: #1d1240;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+  }
+
+  .tituloSecundarioSobreMi {
+    line-height: 4.8rem;
+    font-family: $fuente-math, system-ui;
+    color: #1d1240;
+  }
+
+  .tituloTerciarioSobreMi {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: $fuente-noto-sans-jp;
+    color: #1d1240c7;
+  }
+
+  .imagenSobreMi {
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+    animation-timeline: --imagen;
+    animation-name: mostrarImagen;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+  }
+
+  .tituloSeccionSobreMi {
+    position: relative;
+    view-timeline-name: --titulo;
+    view-timeline-axis: block;
+    animation-timeline: --titulo;
+    animation-name: mostrarTitulo;
+    animation-range: entry 40% cover 45%;
+    animation-fill-mode: both;
+    transform-origin: bottom;
+    font-family: $fuente-eb-garamond;
+  }
+
+  .descripcionSeccionSobreMi {
+    position: relative;
+    view-timeline-name: --descripcion;
+    view-timeline-axis: block;
+    animation-timeline: --descripcion;
+    animation-name: mostrarDescripcion;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    transform-origin: bottom;
+    font-size: 1.25rem;
+    font-family: "Noto Sans JP", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .tituloMisServicios {
+    font-family: $fuente-eb-garamond;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 600;
+    color: #1d1240;
+  }
+
+  .card {
+    transition: all 0.2s ease;
+    box-shadow: 1px 2px 6px #00000090;
+
+    .card-title {
+      font-family: $fuente-math;
+      letter-spacing: 1px;
+      font-size: 1.75rem;
+      color: white;
+    }
+
+    .card-text {
+      font-family: $fuente-noto-sans-jp;
+      letter-spacing: 0.75px;
+      font-size: 1rem;
+      color: rgb(224, 224, 224);
+    }
+
+    .card-body {
+      background: #2e2e2e;
+      border-radius: 0 0 5px 5px;
+    }
+  }
+
+  .card:hover {
+    box-shadow: 1px 7px 16px #00000090;
+    transform: translateY(-10px) ;
+  }
+  .enlaceServicios{
+    text-decoration: none;
+  }
+  .contenedorImagenAnimadaDescripcion{
+    border-top: 1px solid #00000040;
+  }
+}

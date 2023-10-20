@@ -1,0 +1,40 @@
+@import "variables.scss";
+
+//Estilos de página proyectos
+.contenedorProyectos {
+  .tituloProyectos {
+    font-family: $fuente-eb-garamond;
+    letter-spacing: 1px;
+  }
+  .cardProyectos {
+    margin-bottom: 1.5rem;
+    max-width: 1000px;
+    .contenedorCardProyectos {
+      .titulo-descripcion-proyectos {
+        height: 100% !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        flex-direction: column !important;
+        box-shadow: 0 2px 12px #00000070
+      }
+    }
+  }
+  .enlaceProyectos {
+    text-decoration: none;
+    background-image: linear-gradient(
+      45deg,
+      $color-rojo,
+      $color-azul,
+      $color-deeppink,
+      $color-azul,
+      $color-rojo,
+      $color-azul,
+      $color-deeppink,
+      $color-azul
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    padding: 0 .25rem;
+  }
+}

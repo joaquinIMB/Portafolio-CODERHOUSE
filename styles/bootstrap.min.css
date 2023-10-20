@@ -6651,7 +6651,7 @@ textarea.form-control.is-invalid {
   font-size: calc(1.275rem + 0.3vw) ;
 }
 .fs-5 {
-  font-size: 1.25rem ;
+  font-size: 1.25rem !important;
 }
 .fs-6 {
   font-size: 1rem ;
