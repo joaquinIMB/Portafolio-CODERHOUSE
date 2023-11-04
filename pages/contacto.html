@@ -10,8 +10,10 @@
     href="https://fonts.googleapis.com/css2?family=Oxanium:wght@100;200;300;400&family=EB+Garamond:ital,wght@1,500&family=Noto+Sans+JP&display=swap"
     rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <meta name="description" content="¨Portafolio desarrollador full stack Joaquin Imbriago. Construyendo el futuro digital implementando tecnología de punta." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <title>Contacto - Joaquin Imbriago</title>
+  <link rel="shortcut icon" href="../assets/faviconProyectoCoder.png" type="image/x-icon">
+  <title>Contáctame - Joaquin Imbriago</title>
 </head>
 
 <body>
@@ -49,7 +51,7 @@
   </header>
   <main class="contenedorContacto px-2">
     <div class="container-fluid  ms-5 me-5 pb-5">
-      <div class="row justify-content-between align-items-center">
+      <div class="row justify-content-between align-items-center" id="contenedorFormularioContacto">
         <div class="col-6 pt-2">
           <h2 class="m-auto tituloContactame">¡Contactame!</h2>
           <form class="formulario_contacto">
@@ -65,11 +67,15 @@
               <label for="mensaje" class="form-label">Mensaje:</label>
               <textarea class="form-control" id="mensaje" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary ">Enviar</button>
+            <button type="submit" class="btn btn-primary">
+            <a class="text-decoration-none text-light" href="./404noFunciona.html">
+              Enviar
+            </a>
+            </button>
           </form>
         </div>
-        <div class="col-5 pt-4">
-          <img src="./../assets/vector.jpg" class="imagenContacto img-fluid rounded-1 " alt="">
+        <div class="col-5 pt-4 contenedorImagenContacto">
+          <img src="./../assets/vector.jpg" class="imagenContacto img-fluid rounded-1 " alt="Imagen de una persona enviando un mensaje mediante un avión de papel">
         </div>
       </div>
     </div>
@@ -78,26 +84,29 @@
     <div class="contenedorRedesSociales col-6">
       <ul class="d-flex justify-content-center gap-4">
         <li class="listaRedesSociales">
-          <a href="enlaceRedesSociales">
-            <img class="logoRedSocial" src="./../assets/linkedin.png" alt="red social de Joaquin Imbriago" />
+          <a href="https://www.linkedin.com/in/joaquin-imbriago/" target="_blank">
+            <img class="logoRedSocial" src="./../assets/linkedin.png"
+              alt="Enlace a red social Linkedin de Joaquin Imbriago" />
           </a>
         </li>
         <li class="listaRedesSociales">
-          <a href="enlaceRedesSociales">
-            <img class="logoRedSocial" src="./../assets/instagram.png" alt="red social de Joaquin Imbriago" />
+          <a href="https://www.instagram.com/joaquinexequiell/" target="_blank">
+            <img class="logoRedSocial" src="./../assets/instagram.png"
+              alt="Enlace a red social Instagram de Joaquin Imbriago" />
           </a>
         </li>
         <li class="listaRedesSociales">
-          <a href="enlaceRedesSociales">
-            <img class="logoRedSocial" src="./../assets/github.png" alt="red social de Joaquin Imbriago" />
+          <a href="https://github.com/joaquinIMB" target="_blank">
+            <img class="logoRedSocial" src="./../assets/github.png"
+              alt="Enlace a red social Git Hub de Joaquin Imbriago" />
           </a>
         </li>
       </ul>
     </div>
     <ul class="listaDesordenadaFooterIndex col-6">
       <li class="listaFooterIndex">
-        <small class="enlaceFooterIndex" href="">
-          @Copyright Joaquin Imbriago 2023
+        <small>
+          <a class="enlaceFooterIndex" href="https://proyectofinaljoaquinimbriago.netlify.app/" aria-label="Derechos de autor © 2023 Joaquin Imbriago - Todos los derechos reservados">© 2023 Joaquin Imbriago - Todos los derechos reservados</a>
         </small>
       </li>
     </ul>

@@ -96,6 +96,9 @@
     text-align: center !important;
     font-size: 5rem !important;
   }
+  .tituloPaginaError{
+    font-size: 7rem !important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -114,6 +117,16 @@
   }
   .listaIndex {
     align-self: center !important;
+    padding:0.25rem ;
+  }
+  .contenedorImagenContacto{
+    display: none;
+  }
+  #contenedorFormularioContacto{
+    justify-content: center !important;
+  }
+  .tituloPaginaError{
+    font-size: 6.25rem !important;
   }
 }
 
@@ -150,6 +163,14 @@
   .spanTituloFullStack {
     font-size: 5rem;
   }
+  .tituloPaginaError{
+    font-size: 6rem !important;
+    line-height: 5.75rem;
+    padding-bottom: 2rem;
+  }
+  .listaDesordenadaFooterIndex {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 680px) {
@@ -162,6 +183,10 @@
   .cards {
     width: 90% !important;
     padding-top: 1.75rem !important;
+  }
+  .tituloPaginaError{
+    font-size: 5.5rem !important;
+    padding-bottom: 1rem;
   }
 }
 
@@ -219,6 +244,10 @@
   }
   .spanTituloFullStack {
     font-size: 4rem !important;
+  }
+  .tituloPaginaError{
+    font-size: 4.75rem !important;
+    padding-bottom: 1rem;
   }
 }
 
