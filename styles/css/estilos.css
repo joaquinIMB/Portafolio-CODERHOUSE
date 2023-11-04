@@ -142,7 +142,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
 }
 .contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .tituloIndex,
@@ -157,7 +158,8 @@
   position: relative;
   background: #ffffff;
   line-height: 6.75rem;
-  backdrop-filter: opacity(0.7) brightness(0.7);
+  -webkit-backdrop-filter: opacity(0.7) brightness(0.7);
+          backdrop-filter: opacity(0.7) brightness(0.7);
   filter: hue-rotate(300deg);
 }
 .contenedorPrincipal .contenedorBanner .contenedorVideoYtitulos .tituloIndex .spanTituloWeb,
@@ -186,7 +188,8 @@
   z-index: 99;
   position: relative;
   background: #ffffff;
-  backdrop-filter: opacity(0.7) brightness(0.9);
+  -webkit-backdrop-filter: opacity(0.7) brightness(0.9);
+          backdrop-filter: opacity(0.7) brightness(0.9);
   filter: hue-rotate(300deg);
 }
 .contenedorPrincipal .tituloInicialSobreMi {
@@ -277,6 +280,32 @@
 .contenedorPrincipal .contenedorImagenAnimadaDescripcion {
   border-top: 1px solid rgba(0, 0, 0, 0.2509803922);
 }
+.contenedorPrincipal .contenedorTitulosError404 {
+  height: 440px;
+  align-content: center;
+}
+.contenedorPrincipal .contenedorTitulosError404 .tituloPaginaError {
+  transition: all 0.3s ease;
+  font-family: "Rowdies", sans-serif;
+  text-align: center;
+  font-size: 8rem;
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+.contenedorPrincipal .contenedorTitulosError404 .tituloPaginaError:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(16deg, red, blue, deeppink, blue);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .footerIndex {
   display: flex;
@@ -344,12 +373,14 @@
   margin-bottom: 1.5rem;
   max-width: 1000px;
 }
+.contenedorProyectos .cardProyectos .contenedorCardProyectos {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4392156863);
+}
 .contenedorProyectos .cardProyectos .contenedorCardProyectos .titulo-descripcion-proyectos {
   height: 100% !important;
   display: flex !important;
   justify-content: space-around !important;
   flex-direction: column !important;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4392156863);
 }
 .contenedorProyectos .enlaceProyectos {
   text-decoration: none;
@@ -493,6 +524,9 @@
     text-align: center !important;
     font-size: 5rem !important;
   }
+  .tituloPaginaError {
+    font-size: 7rem !important;
+  }
 }
 @media (max-width: 991.98px) {
   .listaDesordenadaIndex {
@@ -510,6 +544,16 @@
   }
   .listaIndex {
     align-self: center !important;
+    padding: 0.25rem;
+  }
+  .contenedorImagenContacto {
+    display: none;
+  }
+  #contenedorFormularioContacto {
+    justify-content: center !important;
+  }
+  .tituloPaginaError {
+    font-size: 6.25rem !important;
   }
 }
 @media (max-width: 800px) {
@@ -545,6 +589,14 @@
   .spanTituloFullStack {
     font-size: 5rem;
   }
+  .tituloPaginaError {
+    font-size: 6rem !important;
+    line-height: 5.75rem;
+    padding-bottom: 2rem;
+  }
+  .listaDesordenadaFooterIndex {
+    text-align: center !important;
+  }
 }
 @media (max-width: 680px) {
   .contenedorCard {
@@ -556,6 +608,10 @@
   .cards {
     width: 90% !important;
     padding-top: 1.75rem !important;
+  }
+  .tituloPaginaError {
+    font-size: 5.5rem !important;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 600px) {
@@ -610,6 +666,10 @@
   .spanTituloFullStack {
     font-size: 4rem !important;
   }
+  .tituloPaginaError {
+    font-size: 4.75rem !important;
+    padding-bottom: 1rem;
+  }
 }
 @media (max-height: 520px) {
   .tituloIndex {
@@ -622,6 +682,4 @@
     justify-content: center;
     height: auto !important;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
