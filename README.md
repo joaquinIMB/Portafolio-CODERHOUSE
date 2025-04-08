@@ -45,7 +45,7 @@ Abre el archivo index.html en tu navegador preferido.
 Demo
 Puedes ver una versión en vivo del portafolio en el siguiente enlace:
 
-Portafolio CODERHOUSE
+[Portafolio CODERHOUSE](https://proyectofinaljoaquinimbriago.netlify.app/)
 
 Contribuciones
 Este proyecto fue desarrollado como parte del curso de CODERHOUSE y actualmente no se aceptan contribuciones externas. Sin embargo, cualquier comentario o sugerencia es bienvenido.
